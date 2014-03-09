@@ -8,10 +8,11 @@
     / Use title if it's in the page YAML frontmatter
     %title= data.page.title || "The Middleman"
 
-    = stylesheet_link_tag "normalize", "all","haml"
+    = stylesheet_link_tag "normalize", "return-zero"
     = javascript_include_tag  "all"
 
   %body.page_classes
-    = partial "header"
-    = yield
-    = partial "footer"
+    .container
+      = partial "header"
+      = yield
+      = partial "footer"
