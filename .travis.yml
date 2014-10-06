@@ -5,7 +5,7 @@ env:
     - GIT_COMMITTER_EMAIL: "neoen.gsn@gmail.com"
     - GIT_AUTHOR_NAME: "Tomohiro Suwa"
     - GIT_AUTHOR_EMAIL: "neoen.gsn@gmail.com"
-    - secure: "c2qFCbpu+uBqemHlTFzcDInrlc+WLCqgL9mqWvJFeAdks/J0dk3sj0NUgfsUotE6SXLVg/PFBKpOgMyrrRbzDe9fzV81tqifboK/a/Gf37jH8+l2b3Q0e/odTvzl97XaEgRYdlev5GKIThAyFv2fgx5epZ+cMbybAdOkooNJ730="
+    - secure: "gbV66Lgthwkjmwwg+5q6vs+X3yoEJ6DHJbrPl12bebYceyRkU5O+TYIL8XrNslo2Jwfc7NnTuC2o4nQ5BPdD39J5vsFOPpf63MTdfv8Z+3gUUN9vAGR5wjSnBkz417WU0z+IVnux0jhbysSllr4PI52S5rg3vHJxU5C1KLlAGB4="
 script:
   - bundle exec middleman build
 after_success:
