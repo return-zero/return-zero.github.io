@@ -1,0 +1,20 @@
+language: ruby
+env:
+  global:
+    - GIT_COMMITTER_NAME: "Tomohiro Suwa"
+    - GIT_COMMITTER_EMAIL: "neoen.gsn@gmail.com"
+    - GIT_AUTHOR_NAME: "Tomohiro Suwa"
+    - GIT_AUTHOR_EMAIL: "neoen.gsn@gmail.com"
+    - secure: "gbV66Lgthwkjmwwg+5q6vs+X3yoEJ6DHJbrPl12bebYceyRkU5O+TYIL8XrNslo2Jwfc7NnTuC2o4nQ5BPdD39J5vsFOPpf63MTdfv8Z+3gUUN9vAGR5wjSnBkz417WU0z+IVnux0jhbysSllr4PI52S5rg3vHJxU5C1KLlAGB4="
+script:
+  - bundle exec middleman build
+after_success:
+  - cd build
+  - echo "task :default" > Rakefile
+  - git init
+  - git add -A
+  - git commit -m "Update from Travis CI"
+  - 'git push --quiet https://$GH_TOKEN@github.com/return-zero/return-zero.github.io master -f'
+branches:
+  only:
+    - source
