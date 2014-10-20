@@ -2,7 +2,7 @@
 
 $(function () {
     var arr = [];
-    $('.clearfix').each(function() {
+    $('.clearfix div').each(function() {
         arr.push($(this).html());
     });
 
@@ -12,6 +12,6 @@ $(function () {
 
     $('.clearfix').empty();
     for (var i = 0; i < arr.length; i++) {
-        $('clearfix').append(arr[i]);
+        $('clearfix').append('<div class="col-md-6 col-xs-12 col-lg-3 text-center">' + arr[i] + '</div>');
     }
 });
