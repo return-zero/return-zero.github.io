@@ -4,6 +4,10 @@ img {
   border-radius: 50%;
   width: 100px;
   height: 100px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .title {
