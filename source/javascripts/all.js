@@ -2,7 +2,7 @@
 
 $(function () {
     var arr = [];
-    $('.clearfix div').each(function() {
+    $('.member div').each(function() {
         arr.push($(this).html());
     });
 
@@ -10,8 +10,8 @@ $(function () {
         return Math.random() - Math.random();
     });
 
-    $('.clearfix').empty();
+    $('.member').empty();
     for (var i = 0; i < arr.length; i++) {
-        $('clearfix').append('<div class="col-md-6 col-xs-12 col-lg-3 text-center">' + arr[i] + '</div>');
+        $('.member').append('<div class="col-md-6 col-xs-12 col-lg-3 text-center">' + arr[i] + '</div>');
     }
 });
