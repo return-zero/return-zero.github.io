@@ -4,6 +4,7 @@ img {
   border-radius: 50%;
   width: 100px;
   height: 100px;
+  margin-bottom: 30px;
 
   &:hover {
     opacity: 0.8;
@@ -11,7 +12,7 @@ img {
 }
 
 .title {
-  font-size: 42px;
+  font-size: 48px;
   margin: 100px 0;
 }
 
@@ -21,4 +22,9 @@ img {
 
 body {
   font-family: 'Orbitron', sans-serif;
+  padding-bottom: 60px;
+}
+
+.profile_image {
+  margin-bottom: 30px;
 }
