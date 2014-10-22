@@ -1,10 +1,12 @@
 @import "bootstrap";
 
-img {
+$profile_img_size: 100px;
+
+.profile_image {
+  width: $profile_img_size:;
+  height: $profile_img_size:;
   border-radius: 50%;
-  width: 130px;
-  height: 130px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 
   &:hover {
     opacity: 0.8;
@@ -23,14 +25,6 @@ img {
   margin-bottom: 100px;
 }
 
-.centering {
-  margin: auto;
-}
-
 .container {
   padding-bottom: 60px;
-}
-
-.profile_image {
-  margin-bottom: 50px;
 }

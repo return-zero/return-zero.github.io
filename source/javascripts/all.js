@@ -12,6 +12,6 @@ $(function () {
 
     $('.member').empty();
     for (var i = 0; i < arr.length; i++) {
-        $('.member').append('<div class="col-md-6 col-xs-12 col-lg-3 text-center">' + arr[i] + '</div>');
+        $('.member').append('<div class="col-xs-12 col-md-6 col-lg-3 text-center">' + arr[i] + '</div>');
     }
 });
