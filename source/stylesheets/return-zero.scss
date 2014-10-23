@@ -34,6 +34,18 @@ $subtitle-font-size: 24px;
   padding-bottom: 60px;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 860px;
+  }
+}
+
 
 @include iphone5 {
   .prifile_image {
