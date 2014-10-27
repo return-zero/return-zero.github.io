@@ -1,3 +1,1 @@
-# return-zero.net
-
-Hyper Creative Group
+# return-zero.github.io
